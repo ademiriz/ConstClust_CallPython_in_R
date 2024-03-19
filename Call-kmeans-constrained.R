@@ -6,7 +6,13 @@ py_install(envname = "C:\\Users\\ademiriz\\Documents\\.virtualenvs\\r-reticulate
 py_module_available("k-means-constrained")
 reticulate::py_version()
 
-py_run_file("constKeyMeansIris.py")
+py_run_file("constKMeansIris.py")
 
 #py$mylabels
 table(py$mylabels)
+
+py_run_file("constKMeansSampleData.py")
+
+#py$mylabels
+table(py$mylabels)
+
